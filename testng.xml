@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="framework.Listeners"/>
+    </listeners>
+    <test name="qaClickAcademy" parallel="methods">
+        <classes>
+            <class name="framework.HomePageTest"/>
+            <class name="framework.NavigationBarTest"/>
+            <class name="framework.TitleTest"/>
+        </classes>
+    </test>
+</suite>

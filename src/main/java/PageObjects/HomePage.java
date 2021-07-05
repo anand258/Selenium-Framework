@@ -15,9 +15,9 @@ public class HomePage {
         this.driver = driver;
     }
 
-    By loginButton = By.cssSelector("a[href*='sign_in']");
-    By featuredLectureText = By.cssSelector("section[id='content'] h2");
-    By navigationBar = By.cssSelector(".nav.navbar-nav.navbar-right");
+    private By loginButton = By.cssSelector("a[href*='sign_in']");
+    private By featuredLectureText = By.cssSelector("section[id='content'] h2");
+    private By navigationBar = By.cssSelector(".nav.navbar-nav.navbar-right");
 
     public LoginPage getLogin() {
         driver.findElement(loginButton).click();

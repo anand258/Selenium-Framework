@@ -15,8 +15,8 @@ public class ForgotPasswordPage {
         this.driver = driver;
     }
 
-    By emailIdTextBox = By.id("user_email");
-    By sendMeButton = By.name("commit");
+    private By emailIdTextBox = By.id("user_email");
+    private By sendMeButton = By.name("commit");
 
     public WebElement getEmailId(){
         return driver.findElement(emailIdTextBox);

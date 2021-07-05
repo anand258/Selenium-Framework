@@ -15,10 +15,10 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    By emailTextBox = By.id("user_email");
-    By passwordTextBox = By.id("user_password");
-    By loginButton = By.name("commit");
-    By forgotPassword = By.cssSelector("a[href*='password/new']");
+    private By emailTextBox = By.id("user_email");
+    private By passwordTextBox = By.id("user_password");
+    private By loginButton = By.name("commit");
+    private By forgotPassword = By.cssSelector("a[href*='password/new']");
 
     public WebElement getEmail(){
         return driver.findElement(emailTextBox);

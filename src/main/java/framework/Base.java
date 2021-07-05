@@ -22,15 +22,15 @@ public class Base {
     public Properties prop;
     public WebDriver initialiseDriver() throws IOException {
         prop = new Properties();
-        FileInputStream fin = new FileInputStream("src/main/resources/data.properties");
+        FileInputStream fin = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/data.properties");
         prop.load(fin);
-        //String browserName = prop.getProperty("browser"); // to read browser name from property file
-        String browserName = System.getProperty("browser"); // to read browser name from mvn cmd for jenkins
+        String browserName = prop.getProperty("browser"); // to read browser name from property file
+        //String browserName = System.getProperty("browser"); // to read browser name from mvn cmd for jenkins
         if(browserName.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/chromedriver");
             driver = new ChromeDriver();
         } else if(browserName.equalsIgnoreCase("firefox")){
-            System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
+            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/resources/geckodriver");
             driver = new FirefoxDriver();
         }
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

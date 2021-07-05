@@ -5,6 +5,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
@@ -26,9 +27,13 @@ public class Base {
         prop.load(fin);
         String browserName = prop.getProperty("browser"); // to read browser name from property file
         //String browserName = System.getProperty("browser"); // to read browser name from mvn cmd for jenkins
-        if(browserName.equalsIgnoreCase("chrome")){
+        if(browserName.contains("chrome")){
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/chromedriver");
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            if(browserName.contains("headless")){
+                options.addArguments("--headless");
+            }
+            driver = new ChromeDriver(options);
         } else if(browserName.equalsIgnoreCase("firefox")){
             System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/resources/geckodriver");
             driver = new FirefoxDriver();

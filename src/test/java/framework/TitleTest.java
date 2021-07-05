@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
 import java.io.IOException;
 
 /**
@@ -17,9 +16,11 @@ public class TitleTest extends Base {
 
     WebDriver driver;
 
+    HomePage hp;
+
     public static Logger Log = LogManager.getLogger(Base.class.getName());
 
-    @BeforeMethod
+    @BeforeTest
     public void setup() throws IOException {
         driver = initialiseDriver();
         Log.info("driver is initialised");
@@ -27,16 +28,25 @@ public class TitleTest extends Base {
         Log.info("navigated to the " + prop.getProperty("url"));
     }
 
-    @Test
+    @Test(priority = 1)
     public void titleValidation() {
-        HomePage hp = new HomePage(driver);
+        hp = new HomePage(driver);
         String title = hp.getFeaturedLecture().getText();
         Log.info("got title as " + title);
         Assert.assertEquals(title, "FEATURED COURSES123");
         Log.info("assertion done for title");
     }
 
-    @AfterMethod
+    @Test(priority = 2)
+    public void headerTitleValidation(){
+        String headerTitle = hp.getHeaderText().getText();
+        System.out.println(hp.getHeaderText().isDisplayed());
+        Log.info("got header title as " + headerTitle);
+        Assert.assertEquals(headerTitle, "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
+        Log.info("assertion done for header title");
+    }
+
+    @AfterTest
     public void tearDown(){
         driver.close();
         Log.info("browser closed");

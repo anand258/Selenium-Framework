@@ -19,7 +19,7 @@ public class NavigationBarTest extends Base{
 
     public static Logger Log = LogManager.getLogger(Base.class.getName());
 
-    @BeforeMethod
+    @BeforeTest
     public void setup() throws IOException {
         driver = initialiseDriver();
         Log.info("driver is initialised");
@@ -34,7 +34,7 @@ public class NavigationBarTest extends Base{
         Log.info("Assertion done for navigation bar");
     }
 
-    @AfterMethod
+    @AfterTest
     public void tearDown(){
         driver.close();
         Log.info("browser closed");

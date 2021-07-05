@@ -18,6 +18,7 @@ public class HomePage {
     private By loginButton = By.cssSelector("a[href*='sign_in']");
     private By featuredLectureText = By.cssSelector("section[id='content'] h2");
     private By navigationBar = By.cssSelector(".nav.navbar-nav.navbar-right");
+    private By headerText = By.cssSelector(".carousel-caption h3");
 
     public LoginPage getLogin() {
         driver.findElement(loginButton).click();
@@ -32,4 +33,7 @@ public class HomePage {
         return driver.findElement(navigationBar);
     }
 
+    public WebElement getHeaderText(){
+        return driver.findElement(headerText);
+    }
 }

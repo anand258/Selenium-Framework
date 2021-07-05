@@ -20,12 +20,10 @@ public class HomePageTest extends Base{
 
     public static Logger Log = LogManager.getLogger(Base.class.getName());
 
-    @BeforeMethod
+    @BeforeTest
     public void setup() throws IOException {
         driver = initialiseDriver();
         Log.info("driver is initialised");
-        driver.get(prop.getProperty("url"));
-        Log.info("navigated to the " + prop.getProperty("url"));
     }
 
     @DataProvider
@@ -40,6 +38,8 @@ public class HomePageTest extends Base{
 
     @Test(dataProvider="getData")
     public void basePageNavigation(String email, String password) {
+        driver.get(prop.getProperty("url"));
+        Log.info("navigated to the " + prop.getProperty("url"));
         HomePage hp = new HomePage(driver);
         LoginPage lp = hp.getLogin();
         Log.info("clicked to log in");
@@ -54,7 +54,7 @@ public class HomePageTest extends Base{
         fp.getSendMeInstructions().click();
     }
 
-    @AfterMethod
+    @AfterTest
     public void tearDown(){
         driver.close();
         Log.info("browser closed");

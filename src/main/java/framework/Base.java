@@ -24,7 +24,8 @@ public class Base {
         prop = new Properties();
         FileInputStream fin = new FileInputStream("src/main/resources/data.properties");
         prop.load(fin);
-        String browserName = prop.getProperty("browser");
+        //String browserName = prop.getProperty("browser"); // to read browser name from property file
+        String browserName = System.getProperty("browser"); // to read browser name from mvn cmd for jenkins
         if(browserName.equalsIgnoreCase("chrome")){
             System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
             driver = new ChromeDriver();

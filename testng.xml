@@ -6,10 +6,10 @@
     </listeners>
     <test name="Home page tests">
         <classes>
-            <class name="framework.HomePageTest"/>
+            <class name="framework.HomePageTestUsingDb"/>
         </classes>
     </test>
-    <test name="Validate navigation bar">
+<!--    <test name="Validate navigation bar">
         <classes>
             <class name="framework.NavigationBarTest"/>
         </classes>
@@ -18,5 +18,5 @@
         <classes>
             <class name="framework.TitleTest"/>
         </classes>
-    </test>
+    </test>-->
 </suite>

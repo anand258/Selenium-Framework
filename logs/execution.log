@@ -1,16 +1,49 @@
-16:54:38.861 [TestNG-tests-3] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
-16:54:38.904 [TestNG-tests-3] INFO  framework.Base - got title as FEATURED COURSES
-16:54:38.928 [TestNG-tests-2] INFO  framework.Base - browser closed
-16:54:39.562 [TestNG-tests-1] INFO  framework.Base - clicked to log in
-16:54:39.674 [TestNG-tests-1] INFO  framework.Base - sent restrictedUser@gmail.com email text
-16:54:39.744 [TestNG-tests-1] INFO  framework.Base - sent thisIsPassword password text
-16:54:39.937 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
-16:54:40.017 [TestNG-tests-3] INFO  framework.Base - got header title as AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING
-16:54:40.017 [TestNG-tests-3] INFO  framework.Base - assertion done for header title
-16:54:40.162 [TestNG-tests-3] INFO  framework.Base - browser closed
-16:54:41.992 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
-16:54:42.261 [TestNG-tests-1] INFO  framework.Base - clicked to log in
-16:54:42.343 [TestNG-tests-1] INFO  framework.Base - sent unRestrictedUser@gmail.com email text
-16:54:42.414 [TestNG-tests-1] INFO  framework.Base - sent thisIsPassword password text
-16:54:42.614 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
-16:54:43.066 [TestNG-tests-1] INFO  framework.Base - browser closed
+01:00:48.158 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+01:00:50.074 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+01:00:50.402 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+01:00:50.465 [TestNG-tests-1] INFO  framework.Base - sent anandsingh3 email text
+01:00:50.534 [TestNG-tests-1] INFO  framework.Base - sent password3 password text
+01:00:50.606 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+01:00:52.235 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+01:00:52.536 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+01:00:52.616 [TestNG-tests-1] INFO  framework.Base - sent anandsingh4 email text
+01:00:52.689 [TestNG-tests-1] INFO  framework.Base - sent password4 password text
+01:00:52.762 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+01:00:54.356 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+01:00:54.691 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+01:00:54.756 [TestNG-tests-1] INFO  framework.Base - sent anandsingh5 email text
+01:00:54.813 [TestNG-tests-1] INFO  framework.Base - sent password5 password text
+01:00:54.876 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+01:00:56.435 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+01:00:56.721 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+01:00:56.790 [TestNG-tests-1] INFO  framework.Base - sent anandsingh1 email text
+01:00:56.860 [TestNG-tests-1] INFO  framework.Base - sent password1 password text
+01:00:56.937 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+01:00:57.329 [TestNG-tests-1] INFO  framework.Base - browser closed
+11:57:36.957 [TestNG-tests-1] INFO  framework.Base - driver is initialised
+11:57:42.219 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+11:57:43.413 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+11:57:43.505 [TestNG-tests-1] INFO  framework.Base - sent anandsingh2 email text
+11:57:43.636 [TestNG-tests-1] INFO  framework.Base - sent password2 password text
+11:57:43.695 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+11:57:45.403 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+11:57:45.685 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+11:57:45.744 [TestNG-tests-1] INFO  framework.Base - sent anandsingh3 email text
+11:57:45.799 [TestNG-tests-1] INFO  framework.Base - sent password3 password text
+11:57:45.861 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+11:57:47.403 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+11:57:47.674 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+11:57:47.732 [TestNG-tests-1] INFO  framework.Base - sent anandsingh4 email text
+11:57:47.787 [TestNG-tests-1] INFO  framework.Base - sent password4 password text
+11:57:47.850 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+11:57:49.410 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+11:57:49.693 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+11:57:49.760 [TestNG-tests-1] INFO  framework.Base - sent anandsingh5 email text
+11:57:49.823 [TestNG-tests-1] INFO  framework.Base - sent password5 password text
+11:57:49.892 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+11:57:51.394 [TestNG-tests-1] INFO  framework.Base - navigated to the https://www.qaclickacademy.com/
+11:57:51.674 [TestNG-tests-1] INFO  framework.Base - clicked to log in
+11:57:51.740 [TestNG-tests-1] INFO  framework.Base - sent anandsingh1 email text
+11:57:51.804 [TestNG-tests-1] INFO  framework.Base - sent password1 password text
+11:57:51.874 [TestNG-tests-1] INFO  framework.Base - clicked on the login button
+11:57:52.239 [TestNG-tests-1] INFO  framework.Base - browser closed

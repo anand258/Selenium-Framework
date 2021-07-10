@@ -1,0 +1,50 @@
+To tell git who you are
+git config -global user.name="Anand"
+git config -global user.email="anand@gmail.com"
+
+Create project and cd to the main folder
+git init - to initialise the git
+
+To clone any repo
+git clone git link
+
+To add all the files to staging
+git add *
+
+To add single file
+git add filename
+
+to get the status like which files are staging, which files are modified etc
+git status
+
+To commit the files
+git commit -m "msg"
+
+To connect your local to remote
+git remote add origin gitLink
+
+To push the committed changes
+git push origin master
+git psuh origin featureBranch
+
+To pull the code from git
+git pull origin master
+git pull origin featureBranch
+
+To create new branch
+git checkout -b featureBranch
+
+To switch to branch
+git checkout featureBranch
+
+To know all the branches
+git branch
+
+To merge branch to master
+git checkout master
+git pull origin master
+git merge featureBranch
+
+
+
+
